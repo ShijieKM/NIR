@@ -1,0 +1,734 @@
+{
+  "1": [
+    {
+      "method": "raw",
+      "components": 5,
+      "mae": 4.008628188993788
+    },
+    {
+      "method": "raw",
+      "components": 10,
+      "mae": 3.2103224628737737
+    },
+    {
+      "method": "raw",
+      "components": 15,
+      "mae": 2.780168815108503
+    },
+    {
+      "method": "raw",
+      "components": 20,
+      "mae": 3.003432055864102
+    },
+    {
+      "method": "raw",
+      "components": 25,
+      "mae": 3.2200451804519075
+    },
+    {
+      "method": "raw",
+      "components": 30,
+      "mae": 3.2831074291708324
+    },
+    {
+      "method": "snv",
+      "components": 5,
+      "mae": 3.6284215371937774
+    },
+    {
+      "method": "snv",
+      "components": 10,
+      "mae": 2.9087868113049797
+    },
+    {
+      "method": "snv",
+      "components": 15,
+      "mae": 2.6279199651392275
+    },
+    {
+      "method": "snv",
+      "components": 20,
+      "mae": 2.880134744520435
+    },
+    {
+      "method": "snv",
+      "components": 25,
+      "mae": 2.9806682088455467
+    },
+    {
+      "method": "snv",
+      "components": 30,
+      "mae": 3.001739039354962
+    },
+    {
+      "method": "derivative",
+      "components": 5,
+      "mae": 3.395393606916368
+    },
+    {
+      "method": "derivative",
+      "components": 10,
+      "mae": 3.272434222465434
+    },
+    {
+      "method": "derivative",
+      "components": 15,
+      "mae": 3.5872315921143825
+    },
+    {
+      "method": "derivative",
+      "components": 20,
+      "mae": 3.71014145927627
+    },
+    {
+      "method": "derivative",
+      "components": 25,
+      "mae": 3.753626383559512
+    },
+    {
+      "method": "derivative",
+      "components": 30,
+      "mae": 3.76126214082955
+    },
+    {
+      "method": "snv_derivative",
+      "components": 5,
+      "mae": 3.2179576497619258
+    },
+    {
+      "method": "snv_derivative",
+      "components": 10,
+      "mae": 3.252907662588443
+    },
+    {
+      "method": "snv_derivative",
+      "components": 15,
+      "mae": 3.5487674348036022
+    },
+    {
+      "method": "snv_derivative",
+      "components": 20,
+      "mae": 3.7005402686099753
+    },
+    {
+      "method": "snv_derivative",
+      "components": 25,
+      "mae": 3.7558653930077046
+    },
+    {
+      "method": "snv_derivative",
+      "components": 30,
+      "mae": 3.7637633455695125
+    }
+  ],
+  "2": [
+    {
+      "method": "raw",
+      "components": 5,
+      "mae": 4.152400417969673
+    },
+    {
+      "method": "raw",
+      "components": 10,
+      "mae": 3.1671820987656645
+    },
+    {
+      "method": "raw",
+      "components": 15,
+      "mae": 2.843109273758749
+    },
+    {
+      "method": "raw",
+      "components": 20,
+      "mae": 3.143107397738219
+    },
+    {
+      "method": "raw",
+      "components": 25,
+      "mae": 3.310539971888708
+    },
+    {
+      "method": "raw",
+      "components": 30,
+      "mae": 3.345838311208192
+    },
+    {
+      "method": "snv",
+      "components": 5,
+      "mae": 3.646404805179964
+    },
+    {
+      "method": "snv",
+      "components": 10,
+      "mae": 3.005683622578842
+    },
+    {
+      "method": "snv",
+      "components": 15,
+      "mae": 2.5735038711758467
+    },
+    {
+      "method": "snv",
+      "components": 20,
+      "mae": 2.85608019850172
+    },
+    {
+      "method": "snv",
+      "components": 25,
+      "mae": 2.962650543783645
+    },
+    {
+      "method": "snv",
+      "components": 30,
+      "mae": 2.9844270171445157
+    },
+    {
+      "method": "derivative",
+      "components": 5,
+      "mae": 3.48674564312789
+    },
+    {
+      "method": "derivative",
+      "components": 10,
+      "mae": 3.4869171281592015
+    },
+    {
+      "method": "derivative",
+      "components": 15,
+      "mae": 3.697603122241904
+    },
+    {
+      "method": "derivative",
+      "components": 20,
+      "mae": 3.917299905642389
+    },
+    {
+      "method": "derivative",
+      "components": 25,
+      "mae": 4.090211874737255
+    },
+    {
+      "method": "derivative",
+      "components": 30,
+      "mae": 4.1892434248681765
+    },
+    {
+      "method": "snv_derivative",
+      "components": 5,
+      "mae": 3.338834191338993
+    },
+    {
+      "method": "snv_derivative",
+      "components": 10,
+      "mae": 3.4435264110674364
+    },
+    {
+      "method": "snv_derivative",
+      "components": 15,
+      "mae": 3.6851015748821796
+    },
+    {
+      "method": "snv_derivative",
+      "components": 20,
+      "mae": 3.9189051515859923
+    },
+    {
+      "method": "snv_derivative",
+      "components": 25,
+      "mae": 4.121503139657774
+    },
+    {
+      "method": "snv_derivative",
+      "components": 30,
+      "mae": 4.225664473619362
+    }
+  ],
+  "3": [
+    {
+      "method": "raw",
+      "components": 5,
+      "mae": 4.231529505848455
+    },
+    {
+      "method": "raw",
+      "components": 10,
+      "mae": 3.349237560479909
+    },
+    {
+      "method": "raw",
+      "components": 15,
+      "mae": 3.066116906988358
+    },
+    {
+      "method": "raw",
+      "components": 20,
+      "mae": 3.4352872684570936
+    },
+    {
+      "method": "raw",
+      "components": 25,
+      "mae": 3.598933217999724
+    },
+    {
+      "method": "raw",
+      "components": 30,
+      "mae": 3.642890317793803
+    },
+    {
+      "method": "snv",
+      "components": 5,
+      "mae": 3.7256717871700182
+    },
+    {
+      "method": "snv",
+      "components": 10,
+      "mae": 3.0195725878332036
+    },
+    {
+      "method": "snv",
+      "components": 15,
+      "mae": 2.7768568883825377
+    },
+    {
+      "method": "snv",
+      "components": 20,
+      "mae": 3.0260889226517964
+    },
+    {
+      "method": "snv",
+      "components": 25,
+      "mae": 3.039455140571428
+    },
+    {
+      "method": "snv",
+      "components": 30,
+      "mae": 3.0606211121574116
+    },
+    {
+      "method": "derivative",
+      "components": 5,
+      "mae": 3.394536458845187
+    },
+    {
+      "method": "derivative",
+      "components": 10,
+      "mae": 3.380613579269405
+    },
+    {
+      "method": "derivative",
+      "components": 15,
+      "mae": 3.677423809675628
+    },
+    {
+      "method": "derivative",
+      "components": 20,
+      "mae": 3.7457381992337258
+    },
+    {
+      "method": "derivative",
+      "components": 25,
+      "mae": 3.82369370095175
+    },
+    {
+      "method": "derivative",
+      "components": 30,
+      "mae": 3.852822590225544
+    },
+    {
+      "method": "snv_derivative",
+      "components": 5,
+      "mae": 3.2983998450602234
+    },
+    {
+      "method": "snv_derivative",
+      "components": 10,
+      "mae": 3.3593178641449835
+    },
+    {
+      "method": "snv_derivative",
+      "components": 15,
+      "mae": 3.6746162538220197
+    },
+    {
+      "method": "snv_derivative",
+      "components": 20,
+      "mae": 3.802837076202485
+    },
+    {
+      "method": "snv_derivative",
+      "components": 25,
+      "mae": 3.871824028693044
+    },
+    {
+      "method": "snv_derivative",
+      "components": 30,
+      "mae": 3.8914314117819155
+    }
+  ],
+  "4": [
+    {
+      "method": "raw",
+      "components": 5,
+      "mae": 3.82917490126737
+    },
+    {
+      "method": "raw",
+      "components": 10,
+      "mae": 3.0674701438053726
+    },
+    {
+      "method": "raw",
+      "components": 15,
+      "mae": 2.977960545748209
+    },
+    {
+      "method": "raw",
+      "components": 20,
+      "mae": 3.359822746382072
+    },
+    {
+      "method": "raw",
+      "components": 25,
+      "mae": 3.3870402123465437
+    },
+    {
+      "method": "raw",
+      "components": 30,
+      "mae": 3.3465011259927344
+    },
+    {
+      "method": "snv",
+      "components": 5,
+      "mae": 3.6261960335152583
+    },
+    {
+      "method": "snv",
+      "components": 10,
+      "mae": 2.817673325609379
+    },
+    {
+      "method": "snv",
+      "components": 15,
+      "mae": 2.6238305227787646
+    },
+    {
+      "method": "snv",
+      "components": 20,
+      "mae": 2.96026128863671
+    },
+    {
+      "method": "snv",
+      "components": 25,
+      "mae": 2.966523184949164
+    },
+    {
+      "method": "snv",
+      "components": 30,
+      "mae": 2.9854225275488013
+    },
+    {
+      "method": "derivative",
+      "components": 5,
+      "mae": 3.3145545410120008
+    },
+    {
+      "method": "derivative",
+      "components": 10,
+      "mae": 3.55474589381721
+    },
+    {
+      "method": "derivative",
+      "components": 15,
+      "mae": 3.7927993726408387
+    },
+    {
+      "method": "derivative",
+      "components": 20,
+      "mae": 3.815799114110779
+    },
+    {
+      "method": "derivative",
+      "components": 25,
+      "mae": 3.892864151101849
+    },
+    {
+      "method": "derivative",
+      "components": 30,
+      "mae": 3.915951060415501
+    },
+    {
+      "method": "snv_derivative",
+      "components": 5,
+      "mae": 3.3363585602157135
+    },
+    {
+      "method": "snv_derivative",
+      "components": 10,
+      "mae": 3.5152877388744974
+    },
+    {
+      "method": "snv_derivative",
+      "components": 15,
+      "mae": 3.847841438521933
+    },
+    {
+      "method": "snv_derivative",
+      "components": 20,
+      "mae": 3.9400498296787396
+    },
+    {
+      "method": "snv_derivative",
+      "components": 25,
+      "mae": 3.9924775855309105
+    },
+    {
+      "method": "snv_derivative",
+      "components": 30,
+      "mae": 3.9957358862171066
+    }
+  ],
+  "5": [
+    {
+      "method": "raw",
+      "components": 5,
+      "mae": 3.9451254857759803
+    },
+    {
+      "method": "raw",
+      "components": 10,
+      "mae": 3.252539398137516
+    },
+    {
+      "method": "raw",
+      "components": 15,
+      "mae": 3.053338503613858
+    },
+    {
+      "method": "raw",
+      "components": 20,
+      "mae": 3.2739682292659467
+    },
+    {
+      "method": "raw",
+      "components": 25,
+      "mae": 3.274451485558808
+    },
+    {
+      "method": "raw",
+      "components": 30,
+      "mae": 3.2027605737277183
+    },
+    {
+      "method": "snv",
+      "components": 5,
+      "mae": 3.6162626705166945
+    },
+    {
+      "method": "snv",
+      "components": 10,
+      "mae": 2.9160309164242038
+    },
+    {
+      "method": "snv",
+      "components": 15,
+      "mae": 2.526449364593595
+    },
+    {
+      "method": "snv",
+      "components": 20,
+      "mae": 2.6474305369793885
+    },
+    {
+      "method": "snv",
+      "components": 25,
+      "mae": 2.5923953102511845
+    },
+    {
+      "method": "snv",
+      "components": 30,
+      "mae": 2.5878495793473464
+    },
+    {
+      "method": "derivative",
+      "components": 5,
+      "mae": 3.1831691267687363
+    },
+    {
+      "method": "derivative",
+      "components": 10,
+      "mae": 2.874553011653276
+    },
+    {
+      "method": "derivative",
+      "components": 15,
+      "mae": 3.159252545668358
+    },
+    {
+      "method": "derivative",
+      "components": 20,
+      "mae": 3.329575368355845
+    },
+    {
+      "method": "derivative",
+      "components": 25,
+      "mae": 3.445426666912388
+    },
+    {
+      "method": "derivative",
+      "components": 30,
+      "mae": 3.4616536864103304
+    },
+    {
+      "method": "snv_derivative",
+      "components": 5,
+      "mae": 3.206652763789333
+    },
+    {
+      "method": "snv_derivative",
+      "components": 10,
+      "mae": 2.9081477914179477
+    },
+    {
+      "method": "snv_derivative",
+      "components": 15,
+      "mae": 3.27883727610831
+    },
+    {
+      "method": "snv_derivative",
+      "components": 20,
+      "mae": 3.485071142819656
+    },
+    {
+      "method": "snv_derivative",
+      "components": 25,
+      "mae": 3.5745499623921244
+    },
+    {
+      "method": "snv_derivative",
+      "components": 30,
+      "mae": 3.5885485511127344
+    }
+  ],
+  "final": [
+    {
+      "method": "raw",
+      "components": 5,
+      "mae": 3.9126100716303673
+    },
+    {
+      "method": "raw",
+      "components": 10,
+      "mae": 3.150716841899366
+    },
+    {
+      "method": "raw",
+      "components": 15,
+      "mae": 2.9449772194614567
+    },
+    {
+      "method": "raw",
+      "components": 20,
+      "mae": 3.193388887495204
+    },
+    {
+      "method": "raw",
+      "components": 25,
+      "mae": 3.383983964906445
+    },
+    {
+      "method": "raw",
+      "components": 30,
+      "mae": 3.4261765809883817
+    },
+    {
+      "method": "snv",
+      "components": 5,
+      "mae": 3.579067612281957
+    },
+    {
+      "method": "snv",
+      "components": 10,
+      "mae": 2.860768599574965
+    },
+    {
+      "method": "snv",
+      "components": 15,
+      "mae": 2.620929612814183
+    },
+    {
+      "method": "snv",
+      "components": 20,
+      "mae": 2.941370767038836
+    },
+    {
+      "method": "snv",
+      "components": 25,
+      "mae": 3.0230002626757853
+    },
+    {
+      "method": "snv",
+      "components": 30,
+      "mae": 3.0510281166323088
+    },
+    {
+      "method": "derivative",
+      "components": 5,
+      "mae": 3.3709671073476537
+    },
+    {
+      "method": "derivative",
+      "components": 10,
+      "mae": 3.1232760334311926
+    },
+    {
+      "method": "derivative",
+      "components": 15,
+      "mae": 3.4479430112202336
+    },
+    {
+      "method": "derivative",
+      "components": 20,
+      "mae": 3.5947017097557143
+    },
+    {
+      "method": "derivative",
+      "components": 25,
+      "mae": 3.6995643876249664
+    },
+    {
+      "method": "derivative",
+      "components": 30,
+      "mae": 3.7608612097068113
+    },
+    {
+      "method": "snv_derivative",
+      "components": 5,
+      "mae": 3.2827714825550665
+    },
+    {
+      "method": "snv_derivative",
+      "components": 10,
+      "mae": 3.111573392841114
+    },
+    {
+      "method": "snv_derivative",
+      "components": 15,
+      "mae": 3.508735487668879
+    },
+    {
+      "method": "snv_derivative",
+      "components": 20,
+      "mae": 3.692071544449855
+    },
+    {
+      "method": "snv_derivative",
+      "components": 25,
+      "mae": 3.775430251398805
+    },
+    {
+      "method": "snv_derivative",
+      "components": 30,
+      "mae": 3.8455349097470175
+    }
+  ]
+}
