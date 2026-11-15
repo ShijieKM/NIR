@@ -206,7 +206,7 @@ def write_report(output_dir, labels_path, truth, frames, summary, intervals, dif
 
 本报告使用用户另行提供的测试集真实值，对此前保存并冻结的模型预测进行**独立测试集评价**。真实值工作簿为 `{Path(labels_path).name}`，共 80 行，字段为“序号”和“化学成分含量”，没有光谱文件名列。本次按工作簿的整数序号与预测 CSV 文件名数字部分关联，并验证真实值 ID 与两版预测文件 ID 集合均为一一对应的 80 个样本；没有按行位置配对。源表及真实值未复制到仓库，也未写入本报告、汇总 JSON 或误差表。
 
-评价前已存在的预测文件：首版 `results/test_predictions.csv`（SHA-256 `{hashes['first_predictions']}`），优化版 `results_v2/test_predictions.csv`（SHA-256 `{hashes['optimized_predictions']}`）。另报告冻结模型文件及建模代码的哈希用于追溯。此次只读取真实值、计算指标和生成诊断；没有以测试真值重训练、校准、调参、修改预测或选择模型。
+评价前已存在的预测文件：首版 `results/test_predictions.csv`（SHA-256 `{hashes['first_predictions']}`），优化版 `results_v2/test_predictions.csv`（SHA-256 `{hashes['optimized_predictions']}`）。用于评估的原始工作簿按用户明确授权与本次工作一并纳入**私有**仓库（SHA-256 `{hashes['truth_workbook']}`）；逐样本真值及逐样本误差未另外导出为 CSV 或报告。另报告冻结模型文件及建模代码的哈希用于追溯。此次只读取真实值、计算指标和生成诊断；没有以测试真值重训练、校准、调参、修改预测或选择模型。
 
 ## 独立测试指标
 
@@ -273,6 +273,7 @@ def evaluate(labels_path, output_dir=None):
         "optimized_model": _sha256(ROOT / "results_v2" / "final_model.joblib"),
         "first_code": _sha256(ROOT / "model.py"),
         "optimized_code": _sha256(ROOT / "model_v2.py"),
+        "truth_workbook": _sha256(labels_path),
     }
     payload = {
         "n": len(truth),
