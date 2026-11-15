@@ -1,0 +1,71 @@
+{
+  "n": 80,
+  "status": "exploratory_post_hoc_test_check_test_set_already_used_for_models_1_and_2",
+  "models": {
+    "冻结模型2": {
+      "n": 80,
+      "actual_min": 10.13,
+      "actual_max": 42.97,
+      "sep": 3.421035296282424,
+      "mae": 2.598713117763321,
+      "bias_prediction_minus_actual": 0.10414315997046679,
+      "r2": 0.7693992094199542,
+      "median_absolute_error": 1.9180575333520622,
+      "p90_absolute_error": 5.323666772028008,
+      "max_absolute_error": 12.460352532453562,
+      "underpredicted_count": 38,
+      "overpredicted_count": 42
+    },
+    "冻结模型3": {
+      "n": 80,
+      "actual_min": 10.13,
+      "actual_max": 42.97,
+      "sep": 2.435286829841304,
+      "mae": 1.6468898734269246,
+      "bias_prediction_minus_actual": -0.009153953018569538,
+      "r2": 0.8831453707038941,
+      "median_absolute_error": 1.0145378050035134,
+      "p90_absolute_error": 3.561612329958443,
+      "max_absolute_error": 8.41406698021715,
+      "underpredicted_count": 41,
+      "overpredicted_count": 39
+    }
+  },
+  "bootstrap_intervals": {
+    "冻结模型2": {
+      "sep": [
+        2.7748600085656236,
+        4.1254082789809035
+      ],
+      "mae": [
+        2.12508606956778,
+        3.094790248508133
+      ]
+    },
+    "冻结模型3": {
+      "sep": [
+        1.8769885518168477,
+        3.0392160419115317
+      ],
+      "mae": [
+        1.306485259139132,
+        2.085056083501897
+      ]
+    }
+  },
+  "paired_difference_model2_minus_model3": {
+    "sep": [
+      0.1418728755221298,
+      1.8460524203596058
+    ],
+    "mae": [
+      0.39045767573870677,
+      1.541347220344183
+    ]
+  },
+  "high_value_threshold_30_post_hoc": {
+    "n": 9,
+    "model3_mae": 3.5565578990724926,
+    "model3_bias_prediction_minus_actual": -2.675842376802026
+  }
+}

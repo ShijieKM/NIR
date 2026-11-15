@@ -7,6 +7,8 @@
 - `model.py` 包含输入检查、嵌套交叉验证、最终模型拟合、预测与报告生成；`requirements.txt` 固定依赖。`模型评价报告.md` 和 `results/` 为脚本生成的结果，重新运行会覆盖。
 - `results/oof_predictions.csv` 是校正集折外结果；`results/test_predictions.csv` 是测试集逐文件预测；`results/metrics.json` 是指标及选参信息；`results/final_model.joblib` 保存最终模型和波数轴。仅从可信来源加载 joblib 文件。
 - `model_v2.py` 是优化版，使用 `spectral.py` 实现逐光谱预处理，输出 `模型优化评价报告.md` 和 `results_v2/`；`results_v2/inner_scores.json` 记录每折和最终内层候选分数。首版代码及 `results/` 保留作为可复现的同折对照，优化版运行前须先存在首版折外结果。
+- `model3.py` 比较全谱 PLS、训练折内 VIP-PLS、SNV-RBF-SVR 和 SNV-Ridge，输出 `模型3评价报告.md` 与 `results_v3/`。候选固定在代码中；内层选参按合并 MAE，模型 3 外层划分与模型 1/2 同随机种子。不能用测试真值改模型。
+- `evaluate_model3_test.py` 只在模型 3 预测文件冻结后作模型 2/3 的探索性事后测试核对；由于测试集真值之前用于模型 1/2 评价，不能将其当成模型 3 的确认性无偏验证。
 - `evaluate_test.py` 只对用户单独交付的测试真值和此前冻结的预测作独立评价，不训练或选择模型。评估产物默认保存在被 Git 忽略的 `results_external/`。真实标签默认不得提交；只有用户明确授权特定标签文件且目标仓库仍为私有时，才可逐个审核并纳入该文件及明确获授权的报告/图。不要提交逐样本标签或残差导出，也不要改变仓库可见性。
 
 ## 运行
@@ -17,13 +19,16 @@
 python -m pip install -r requirements.txt
 python model.py
 python model_v2.py
+python model3.py
 python evaluate_test.py --labels "D:\路径\测试集的真实值.xlsx"
+python evaluate_model3_test.py
 python -m unittest discover -s tests
 ```
 
 运行使用固定随机种子和单线程数值运算；其他平台可能有微小浮点差异。图表使用英文标签以避免不同环境缺少中文字体，报告正文为中文。修改自动生成的报告时应同步修改 `model.py`，否则下次运行会覆盖。
 优化报告由 `model_v2.py` 生成，修改报告也要同步修改该脚本。最终模型是包含预处理和 PLS 的 scikit-learn Pipeline，输入须与所存波数轴一一对应。要在仓库根目录的 Python 环境中加载可信的 `results_v2/final_model.joblib`，保证 `spectral.py` 可导入。
 测试真值通常是外部私有输入，评价工作簿须有 `序号`、`化学成分含量` 两列；先将整数序号与预测 CSV 文件名数字部分核验为完全相同的 80 个 ID，再作键连接，禁止依行顺序猜测匹配。测试真值只能评估已冻结预测，不可重训练、校准或选模型。输出目录 `results_external/` 已加入 `.gitignore`；无用户明确授权时，不得提交原始标签或评估产物。
+模型 3 使用 34 个预先限定的模型候选：全谱 PLS、训练折内 VIP 筛选 + PLS、SNV-RBF-SVR、SNV-Ridge。预处理、VIP、X/y 缩放和超参数全部仅在各内层训练折拟合。模型 3 出 OOF 与最终预测前不得读入测试真值。测试真值此前已经用于旧模型评价，模型 3 的任何测试指标只能标为探索性/事后核对；不得据此调参或宣称独立确认性能。
 
 ## 验证原则
 

@@ -147,12 +147,12 @@ def _sha256(path):
     return digest.hexdigest()
 
 
-def create_plot(actual, predictions, output_path):
+def create_plot(actual, predictions, output_path, legend_labels=None):
     names = list(predictions)
     fig, axes = plt.subplots(1, 3, figsize=(14, 4))
     low = min(np.min(actual), *(np.min(predictions[name]) for name in names))
     high = max(np.max(actual), *(np.max(predictions[name]) for name in names))
-    legend = {names[0]: "Frozen PLSR v1", names[1]: "Frozen PLSR v2"}
+    legend = legend_labels or {names[0]: "Frozen PLSR v1", names[1]: "Frozen PLSR v2"}
     for name in names:
         axes[0].scatter(actual, predictions[name], s=22, alpha=0.65, label=legend[name])
     axes[0].plot([low, high], [low, high], "k--", linewidth=1)
