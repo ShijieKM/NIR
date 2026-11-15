@@ -1,0 +1,81 @@
+{
+  "n": 80,
+  "label_filename": "测试集的真实值.xlsx",
+  "join": "workbook integer sample ID == prediction CSV filename numeric stem",
+  "models": {
+    "首版冻结 PLSR": {
+      "n": 80,
+      "actual_min": 10.13,
+      "actual_max": 42.97,
+      "sep": 3.450612323506212,
+      "mae": 2.6526739620958204,
+      "bias_prediction_minus_actual": 0.41065580327875545,
+      "r2": 0.7653945915262952,
+      "median_absolute_error": 2.183475954048456,
+      "p90_absolute_error": 5.124743490742766,
+      "max_absolute_error": 11.919544984067905,
+      "underpredicted_count": 36,
+      "overpredicted_count": 44
+    },
+    "优化版冻结 PLSR": {
+      "n": 80,
+      "actual_min": 10.13,
+      "actual_max": 42.97,
+      "sep": 3.421035296282424,
+      "mae": 2.598713117763321,
+      "bias_prediction_minus_actual": 0.10414315997046679,
+      "r2": 0.7693992094199542,
+      "median_absolute_error": 1.9180575333520622,
+      "p90_absolute_error": 5.323666772028008,
+      "max_absolute_error": 12.460352532453562,
+      "underpredicted_count": 38,
+      "overpredicted_count": 42
+    }
+  },
+  "bootstrap": {
+    "iterations": 5000,
+    "seed": 20261115,
+    "intervals": {
+      "首版冻结 PLSR": {
+        "sep": [
+          2.810079437724605,
+          4.127270502953362
+        ],
+        "mae": [
+          2.1971043702250372,
+          3.157017192416314
+        ]
+      },
+      "优化版冻结 PLSR": {
+        "sep": [
+          2.768881749330391,
+          4.110241723542206
+        ],
+        "mae": [
+          2.140219579345906,
+          3.104418615047035
+        ]
+      }
+    },
+    "paired_difference_first_minus_optimized": {
+      "sep": [
+        -0.4564484163768469,
+        0.45487807094241894
+      ],
+      "mae": [
+        -0.37224959851188194,
+        0.4484080311184261
+      ]
+    },
+    "scope": "fixed paired predictions; does not include refit or model-selection uncertainty"
+  },
+  "sha256": {
+    "first_predictions": "8309460f27b8edc0f47ea1fe367e603b8072041d3a304302ff312ee95d8be515",
+    "optimized_predictions": "13bc3b3b9ddc628db69c55bf682fc9a83d606c11f858b894db73bbd01062f56b",
+    "first_model": "97f52bcad6c4023128bca546c30e510968f0969572a9e65769115797bee108c9",
+    "optimized_model": "dd057d5c5168f331d7ee3d75d9b1cfe4a7754055187cd471696aa0a3bb0d95cd",
+    "first_code": "287f1ac5118c818bee4cae86251e41ec9a1b42924fa63c542b3cc85cd4dbb9ce",
+    "optimized_code": "61a52ec2939e6f5538e9e69ea69a6b70172635e1d2765be01ca2837de6681a93",
+    "truth_workbook": "4826ad1aa47cfe012e9d2f08682a495dd9f167072ae301cc661ba786f3fc5d81"
+  }
+}
